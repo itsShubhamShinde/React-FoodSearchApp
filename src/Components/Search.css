@@ -1,0 +1,19 @@
+.Search{
+    border: 2px solid red;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search input{
+    border: 2px solid blue;
+    padding: 0.5rem 1rem;
+    width: 20%;
+    border-radius: .5rem;
+}
+.Search button{
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+    margin-left: 10px;
+}

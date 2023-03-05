@@ -1,0 +1,15 @@
+.cart{
+    border: 2px solid red;
+    height: 85vh;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+}
+.TypeofFood{
+    border: 2px solid green;
+    height: 60vh;
+    width: 40vw;
+}
