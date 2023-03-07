@@ -12,12 +12,12 @@ function App() {
   
   
   useEffect(() => {
-    console.log("app",inputvalue);
+    // console.log("app",inputvalue);
   const data= async()=>{
     const response= await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${inputvalue}&app_id=833b46e1&app_key=6db57b943513a846a3143090d7efabab`)
     // console.log(response)
     const data= await response.json()
-    console.log(data);
+    // console.log(data);
   
    setRecipes(data.hits)
   }

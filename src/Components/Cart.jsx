@@ -6,8 +6,8 @@ const Cart = ({ recipes }) => {
 
     return (
         <div className="cartDiv">
-            {recipes.map((ele) => {
-                console.log(ele.recipe)
+            {recipes.length ==0 ? "result not found" : 
+            recipes.map((ele) => {
                 return <div className='menuDiv'>
                    
                     <div className="headingDiv">
