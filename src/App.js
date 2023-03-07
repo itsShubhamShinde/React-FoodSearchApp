@@ -8,6 +8,7 @@ function App() {
   
   const [inputvalue, setInputvalue] = useState("pizza")
   const [recipes, setRecipes] = useState([])
+  const [value,setValue] = useState("")
   
   
   useEffect(() => {
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-    <Search inputvalue={inputvalue} setInputvalue={setInputvalue}/>
+    <Search inputvalue={inputvalue} setInputvalue={setInputvalue} value={value} setValue={setValue}/>
     <Cart  recipes={recipes} />
     </div>
   );

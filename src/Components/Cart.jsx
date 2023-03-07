@@ -4,18 +4,36 @@ import './Cart.css'
 const Cart = ({ recipes }) => {
 
 
-  return (
-    <div className='cart'>
-      {console.log(recipes)}
-      {recipes.map((ele) => {
-        console.log(ele)
-        return <div className="TypeofFood">
-          {/* <h1>{ele.recipe.label}</h1> */}
-        </div>
+    return (
+        <div className="cartDiv">
+            {recipes.map((ele) => {
+                console.log(ele.recipe)
+                return <div className='menuDiv'>
+                   
+                    <div className="headingDiv">
+                        <h1>{ele.recipe.label}</h1>
+                    </div>
+                    <hr/>
+                    <div className="orderlistDiv">
+                        <ol>
+                            {ele.recipe.ingredientLines.map((ingredient, index) => {
+                                if (index <= 4) {
+                                    return <li>{ingredient}</li>
+                                }
+                            })}
+                        </ol>
+                    </div>
+                    <hr/>
+                    <div className='imageDiv'>
+                        <p>Calories: {ele.recipe.calories.toFixed(0)}</p>
+                        <img src={ele.recipe.image} alt={ele.recipe.label} />
 
-      })}
-    </div>
-  )
+                    </div>
+
+                </div>
+            })}
+        </div>
+    )
 }
 
 export default Cart;

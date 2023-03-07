@@ -1,23 +1,20 @@
 import React from 'react'
 import './Search.css'
 
-const Search = ({ inputvalue, setInputvalue }) => {
+const Search = ({ inputvalue, setInputvalue, value, setValue }) => {
 
     return (
-        <div className='Search'>
+        <div className='Search' >
             <input type="text" onChange={(e) => {
-                setInputvalue(e.currentTarget.value)
-                console.log("search", inputvalue);
+                setValue(e.currentTarget.value)
             }} />
 
-
             <button onClick={(e) => {
-                console.log("prev ", inputvalue);
-                setInputvalue(inputvalue)
+                setInputvalue(value)
             }
             }>Submit</button>
         </div>
     )
 }
 
-export default Search
+export default Search;
