@@ -102,11 +102,11 @@
     
     }
     .headingDiv h1 {
-        /* font-size: 1rem; */
+        font-size: 1.2em;
     }
 
     .orderlistDiv ol {
-        /* padding-left: 2rem; */
+        padding-left: 1em;
         
     }
 }
