@@ -1,5 +1,4 @@
 .Search{
-    /* border: 2px solid red; */
     height: 15vh;
     width: 100%;
     display: flex;
@@ -8,10 +7,7 @@
     background-color: #121721;
 }
 .Search input{
-    /* border: 2px solid blue; */
-    /* height: 20%; */
     padding: 0.5rem 1.5rem;
-    /* padding: 1rem; */
     border-radius: .5rem;
     border: none;
 }
